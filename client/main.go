@@ -30,5 +30,8 @@ func main() {
 	//callSayHello(client)
 
 	// Server stream
-	callSayHelloServerStreaming(client, names)
+	//callSayHelloServerStreaming(client, names)
+
+	//Client stream
+	callSayHelloClientStreaming(client, names)
 }
