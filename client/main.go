@@ -26,15 +26,15 @@ func main() {
 		Names: []string{"Shubham", "Rahul", "Mohit", "Akash"},
 	}
 
-	// Unary
-	//callSayHello(client)
+	//Unary
+	callSayHello(client)
 
-	// Server stream
-	//callSayHelloServerStreaming(client, names)
+	//Server stream
+	callSayHelloServerStreaming(client, names)
 
 	//Client stream
-	//callSayHelloClientStreaming(client, names)
+	callSayHelloClientStreaming(client, names)
 
-	// Bidirectional stream
+	//Bidirectional stream
 	callHelloBidirectionalStream(client, names)
 }
