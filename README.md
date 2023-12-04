@@ -46,6 +46,22 @@ protoc --go_out=. --go-grpc_out=. proto/greet.proto
 
 6. Create the new server and client directories and create the main.go files with necessary controller and services
 
+# Running Specific API
+
+### Unary
+	callSayHello(client)
+
+### Server stream
+	callSayHelloServerStreaming(client, names)
+
+### Client stream
+	callSayHelloClientStreaming(client, names)
+
+### Bidirectional stream
+	callHelloBidirectionalStream(client, names)
+
+To Run a specific API's we can comment out the rest three.
+
 # Running the application
 
 1. Installing the dependencies
@@ -65,3 +81,4 @@ go run server/main.go
 ```bash
 go run client/main.go
 ```
+
